@@ -1,0 +1,31 @@
+/* Reglas globales y ajustes de impresión */
+
+@media print {
+    body { 
+        background: white !important; 
+        color: black !important; 
+    }
+    .no-print { 
+        display: none !important; 
+    }
+    .print-only { 
+        display: block !important; 
+    }
+    .shadow-xl, .shadow-md, .shadow-sm { 
+        box-shadow: none !important; 
+    }
+    .border { 
+        border-color: #cbd5e1 !important; 
+    }
+    table { 
+        page-break-inside: auto; 
+    }
+    tr { 
+        page-break-inside: avoid; 
+        page-break-after: auto; 
+    }
+    .overflow-y-auto { 
+        max-height: none !important; 
+        overflow: visible !important; 
+    }
+}
